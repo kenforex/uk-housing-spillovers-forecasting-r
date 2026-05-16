@@ -12,7 +12,7 @@ LAD code to regional code: https://geoportal.statistics.gov.uk/datasets/ecc34dec
 
 # Methodology:
 
-Please read detailed methods via 🔗 [View repository](https://github.com/kenforex/uk-housing-spillovers-forecasting-r/blob/main/methodology_notes.md)
+Please read detailed methods via 🔗 [View repository file](https://github.com/kenforex/uk-housing-spillovers-forecasting-r/blob/main/methodology_notes.md)
 
 
 # Code Instructions:
