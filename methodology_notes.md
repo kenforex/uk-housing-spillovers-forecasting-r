@@ -14,12 +14,9 @@ The purpose of this document is to make the modelling choices transparent and to
 
 Let
 
-$$
-y_{i,t}
-=
-\log\left(\frac{h_{i,t}}{CPI_t}\right)
--
-\log\left(\frac{h_{i,t-1}}{CPI_{t-1}}\right)
+$$ 
+y_{i,t} = 
+\log\left(\frac{h_{i,t}}{CPI_t}\right) - \log\left(\frac{h_{i,t-1}}{CPI_{t-1}}\right)
 $$
 
 denote the log real house price return for Local Authority District (LAD) $i = 1, \ldots, N$ at month $t = 1, \ldots, T$.
@@ -100,8 +97,7 @@ The heterogeneous autoregressive model relaxes the assumption of common slope co
 The one-lag heterogeneous AR model is:
 
 $$
-y_{i,t}
-=
+y_{i,t} =
 \beta_{0,i}
 +
 \beta_{1,i} y_{i,t-1}
@@ -125,8 +121,7 @@ This model assumes that each LAD is influenced only by its own lagged outcome an
 The coefficients can be estimated separately for each LAD using OLS:
 
 $$
-\hat{\beta}_i
-=
+\hat{\beta}_i =
 (z'_{i,t}z_{i,t})^{-1}z'_{i,t}y_{i,t}
 $$
 
@@ -139,16 +134,14 @@ $$
 and
 
 $$
-\hat{\beta}_i
-=
+\hat{\beta}_i =
 (\hat{\beta}_{0,i}, \hat{\beta}_{1,i,1}, \ldots, \hat{\beta}_{1,i,l})
 $$
 
 More generally, the heterogeneous AR model can be extended to an autoregressive model with exogenous regressors, denoted $AR-X(p)$:
 
 $$
-y_{i,t}
-=
+y_{i,t} =
 \beta_{0,i}
 +
 \sum_{l=1}^{p} \beta_{1,i,l} y_{i,t-l}
@@ -183,8 +176,7 @@ The heterogeneous AR model can also be summarised using the Mean Group estimator
 The Mean Group estimator is:
 
 $$
-\hat{\beta}_{MG}
-=
+\hat{\beta}_{MG} =
 \frac{1}{N}
 \sum_{i=1}^{N}
 \hat{\beta}_i
@@ -208,8 +200,7 @@ The network autoregressive model extends the homogeneous AR model by incorporati
 The network autoregressive model with $p$ lags is:
 
 $$
-Y_t
-=
+Y_t =
 \beta_0
 +
 \sum_{l=1}^{p} \beta_{1,l}Y_{t-l}
@@ -233,8 +224,7 @@ where:
 A version with additional explanatory variables can be written as:
 
 $$
-Y_t
-=
+Y_t =
 \beta_0
 +
 \sum_{l=1}^{p} \beta_{1,l}Y_{t-l}
@@ -261,8 +251,7 @@ where:
 The least-squares type estimator for the NAR model can be written as:
 
 $$
-\hat{\beta}_{NAR}
-=
+\hat{\beta}_{NAR} =
 (Z_W'Z_W)^{-1}Z_W'Y
 $$
 
@@ -271,8 +260,7 @@ where $Z_W$ is the matrix containing the intercept, own lag terms, spatial lag t
 For a NAR model without explanatory variables:
 
 $$
-Z_W
-=
+Z_W =
 (I_N,
 Y_{t-1}, \ldots, Y_{t-l},
 WY_{t-1}, \ldots, WY_{t-l})
@@ -281,8 +269,7 @@ $$
 For a NAR model with explanatory variables:
 
 $$
-Z_W
-=
+Z_W =
 (I_N,
 Y_{t-1}, \ldots, Y_{t-l},
 WY_{t-1}, \ldots, WY_{t-l},
