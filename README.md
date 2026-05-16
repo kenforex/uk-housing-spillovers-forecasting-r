@@ -10,6 +10,10 @@ Shapefile: https://www.arcgis.com/home/item.html?id=a4ffd65eb2c3424d897d2c22f373
 
 LAD code to regional code: https://geoportal.statistics.gov.uk/datasets/ecc34decb1e5465b96bf055b4524edbf_0/explore (or search ‘Local Authority District to Region (April 2023) Lookup in EN’ in ONS in Google)
 
+# Methodology:
+
+Please read detailed methods via 🔗 [View repository](https://github.com/kenforex/uk-housing-spillovers-forecasting-r/blob/main/methodology_notes.md)
+
 
 # Code Instructions:
 
